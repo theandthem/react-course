@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  padding: 10px 20px;
+  background: lightseagreen;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.topicButton {
+  padding: 20px 60px;
+  background: #60DDF7;
+  color: #303135;
+  border: 0;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.topicButton:hover {
+  background: #63AEE0;
+  color: #303135;
+}
