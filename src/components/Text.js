@@ -9,6 +9,12 @@ class Text extends React.Component {
       return <h2>{this.props.content}</h2>;
     } else if (textStyle === 'h3') {
       return <h3>{this.props.content}</h3>;
+    } else if (textStyle === 'h4') {
+      return <h4>{this.props.content}</h4>;
+    } else if (textStyle === 'link') {
+      return <a rel="noreferrer" target="_blank" href={this.props.linkUrl}>{this.props.linkLabel}</a>;
+    } else if (textStyle === 'paragraph') {
+      return <p>{this.props.content}</p>;
     } else {
       return <p><span>{this.props.content}</span></p>;
     }

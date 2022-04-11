@@ -4,8 +4,11 @@ import style from './Topic.module.css';
 function Topic2() {
   return (
     <section className={style.topic}>
-      <Text content="This is topic two" textStyle="h1" />
-      <Text content="Build in progress..." />
+      <section className={style.screen}> 
+        <Text content="Topic 2" textStyle="h4" />
+        <Text content="Screen one" textStyle="h1" />
+        <Text content="Build in progress" textStyle="h3" />
+      </section>
     </section>
   );
 }

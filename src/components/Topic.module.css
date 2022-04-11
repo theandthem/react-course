@@ -1,4 +1,30 @@
 .topic {
+  background: #fff;
+  top: 100px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.screen {
   padding: 50px;
-  margin-top: 50px;
+  text-align: center;
+}
+
+.screen:nth-child(odd) {
+  background: #90c4c1;
+}
+
+.screen:nth-child(even) {
+  background: lightblue;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+a {
+  color: lightcoral;
+  font-weight: bold;
 }

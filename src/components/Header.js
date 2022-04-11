@@ -7,11 +7,14 @@ class Header extends React.Component {
     return (
       <section className={style.header}>
         <Link to="/topic1">
-          <button className={style.topicButton}>Topic 1</button>
+          <button className={style.headerButton}>Topic 1</button>
         </Link>
         <Link to="/topic2">
-          <button className={style.topicButton}>Topic 2</button>
+          <button className={style.headerButton}>Topic 2</button>
         </Link>
+        <button onClick={() => {
+          this.props.toggleSupportVisibility()
+        }} className={style.headerButton}>Support</button>
       </section>
     );
   }

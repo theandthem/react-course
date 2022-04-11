@@ -1,0 +1,41 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+  z-index: 3;
+}
+
+.modal.modalVisible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modalContent {
+  width: 50%;
+  height: 50%;
+  background: #fff;
+  padding: 50px;
+  text-align: center;
+}
+
+.hideButton {
+  padding: 7px 15px;
+  background: lightcoral;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+}
+
+.hideButton:hover {
+  opacity: 0.8;
+}
