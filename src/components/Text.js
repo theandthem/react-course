@@ -1,4 +1,5 @@
 import React from "react";
+import style from './Text.module.css';
 
 class Text extends React.Component {
   render() {
@@ -12,7 +13,7 @@ class Text extends React.Component {
     } else if (textStyle === 'h4') {
       return <h4>{this.props.content}</h4>;
     } else if (textStyle === 'link') {
-      return <a rel="noreferrer" target="_blank" href={this.props.linkUrl}>{this.props.linkLabel}</a>;
+      return <a className={style.link} rel="noreferrer" target="_blank" href={this.props.linkUrl}>{this.props.linkLabel}</a>;
     } else if (textStyle === 'paragraph') {
       return <p>{this.props.content}</p>;
     } else {

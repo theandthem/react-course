@@ -1,6 +1,7 @@
 import React from "react";
 import Text from "./Text";
 import style from './Modal.module.css';
+import Button from '@mui/material/Button';
 
 class Support extends React.Component {
   render() {
@@ -8,9 +9,15 @@ class Support extends React.Component {
       <section className={this.props.visible ? style.modal + ' ' + style.modalVisible : style.modal}>
         <section className={style.modalContent}>
           <nav className={style.modalNav}>
-          <button onClick={() => {
-            this.props.toggleSupportVisibility()
-          }} className={style.hideButton}>Hide</button>
+          <Button
+            variant="contained"
+            disableElevation
+            onClick={() => {
+              this.props.toggleSupportVisibility()
+            }}
+            >
+              Hide
+            </Button>
           </nav>
           <br />
           <hr />
