@@ -1,8 +1,8 @@
 import React from 'react';  
-import Topic1 from './components/Topic-1';
-import Topic2 from './components/Topic-2';
-import Header from './components/Header';
-import Support from './components/Support';
+import Topic1 from './Topic-1';
+import Topic2 from './Topic-2';
+import Header from './Header';
+import Support from './Support';
 import {
   BrowserRouter as Router,
   Routes,
@@ -29,11 +29,11 @@ class Course extends React.Component {
         <section className='course'>
           <Header toggleSupportVisibility={this.toggleSupportVisibility}/>
           <Routes>
-            <Route exact path='/' element={<Topic1/>}/>
-            <Route exact path='/topic1' element={<Topic1/>}/>
-            <Route exact path='/topic2' element={<Topic2/>}/>
+            <Route exact path='/' element={<Topic1 />}/>
+            <Route exact path='/topic1' element={<Topic1 />}/>
+            <Route exact path='/topic2' element={<Topic2 />}/>
           </Routes>
-          <section>
+          <section className='courseExtras'>
             <Support visible={this.state.supportVisible} toggleSupportVisibility={this.toggleSupportVisibility} />
           </section>
         </section>
