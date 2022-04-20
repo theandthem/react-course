@@ -29,7 +29,7 @@ function Topic2() {
       </section>
       <section className={style.screen}> 
         <Text content='Screen three' textStyle='h1' />
-        <Text content='Anoter Tab component from the MUI library to test keys & reusing components' />
+        <Text content='Another Tab component from the MUI library to test keys & reusing components' />
         <TabPanel items={[
           {title:'Tab four', content:'Content for tab four.'},
           {title:'Tab five', content:'Some content for tab five.'},
