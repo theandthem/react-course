@@ -11,18 +11,6 @@ import {
 
 
 class Course extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {supportVisible: false};
-    this.toggleSupportVisibility = this.toggleSupportVisibility.bind(this);
-  }
-
-  toggleSupportVisibility() {
-    this.setState(prevState => ({
-      supportVisible: !prevState.supportVisible
-    }));
-  }
-
   render() {
     return (
       <Router>
@@ -34,7 +22,7 @@ class Course extends React.Component {
             <Route exact path='/topic2' element={<Topic2 />}/>
           </Routes>
           <section className='courseExtras'>
-            <Support visible={this.state.supportVisible} toggleSupportVisibility={this.toggleSupportVisibility} />
+            <Support />
           </section>
         </section>
       </Router>
