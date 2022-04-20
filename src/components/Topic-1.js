@@ -5,6 +5,9 @@ import style from './Topic.module.css';
 function Topic1() {
   return (
     <section className={style.topic}>
+       <section className={style.screen}>
+        <Text content="Simple course built with both custom built and MUI components." textStyle="h1" />
+      </section>
       <section className={style.screen}>
         <Text content="Topic 1" textStyle="h4" />
         <Text content="Screen one" textStyle="h1" />

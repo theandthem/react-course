@@ -1,3 +1,7 @@
+.step {
+  margin: 0 !important;
+}
+
 .content {
   text-align: left;
 }

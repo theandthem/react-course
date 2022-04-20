@@ -12,7 +12,7 @@ class SimpleAccordion extends React.Component {
       <section>
         {this.props.steps.map(function(step, index){
           return (
-            <Accordion>
+            <Accordion key={index} className={style.step}>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls={`panel${index}-content`}
