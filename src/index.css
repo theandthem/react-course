@@ -11,28 +11,3 @@ html {
 body {
   background: #90c4c1;
 }
-
-h1 {
-  font-size: 1.6rem;
-}
-
-h2 {
-  font-size: 1.4rem;
-}
-
-h3 {
-  font-size: 1.2rem;
-}
-
-h4 {
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-div {
-  font-size: 1rem;
-}
-
-a {
-  text-decoration: none;
-}
