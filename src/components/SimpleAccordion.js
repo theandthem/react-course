@@ -10,7 +10,7 @@ class SimpleAccordion extends React.Component {
   render() {
     return (
       <section>
-        {this.props.steps.map(function(step, index){
+        {this.props.data.steps.map(function(step, index){
           return (
             <Accordion key={index} className={style.step}>
               <AccordionSummary

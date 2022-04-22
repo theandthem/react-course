@@ -19,11 +19,11 @@ class Course extends React.Component {
           <Routes>
             <Route exact path='/' element={<Topic1 />}/>
             <Route exact path='/topic1' element={<Topic1 />}/>
-            {/* <Route exact path='/topic2' element={<Topic2 />}/> */}
+            <Route exact path='/topic2' element={<Topic2 />}/>
           </Routes>
-          {/* <section className='courseExtras'>
+          <section className='courseExtras'>
             <Support />
-          </section> */}
+          </section>
         </section>
       </Router>
     );

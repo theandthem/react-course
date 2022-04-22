@@ -49,14 +49,14 @@ export default function BasicTabs(props) {
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="Tabs component">
-        {props.items.map(function(item, index){
+        {props.data.items.map(function(item, index){
           return (
             <Tab key={`tabTitle-${index}`} label={item.title} {...a11yProps(index)} />
           )
         })}
         </Tabs>
       </Box>
-      {props.items.map(function(item, index){
+      {props.data.items.map(function(item, index){
         return (
           <TabPanel key={`tabContent-${index}`} value={value} index={index} align='left'>
             {item.content}

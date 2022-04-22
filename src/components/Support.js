@@ -23,9 +23,9 @@ export default function Support() {
         </nav>
         <br />
         <hr />
-        <Text content="Support" textStyle="h1" />
-        <Text content="If you get stuck, check out our knowledge base by clicking the link below." textStyle="paragraph" />
-        <Text linkUrl="https://support.gomolearning.com/support/home" linkLabel="Support home" textStyle='link' />
+        <Text data={{content: "Support", textStyle:"h1"}} />
+        <Text data={{content:"If you get stuck, check out our knowledge base by clicking the link below.", textStyle:"paragraph"}} />
+        <Text data={{linkUrl:"https://support.gomolearning.com/support/home", linkLabel:"Support home", textStyle:'link'}} />
       </section>
     </section>
   );
