@@ -35,6 +35,7 @@ function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
     'aria-controls': `simple-tabpanel-${index}`,
+    tabIndex: {index},
   };
 }
 
@@ -49,16 +50,16 @@ export default function BasicTabs(props) {
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="Tabs component">
-        {props.data.items.map(function(item, index){
+        {props.data.items.map(function(item, i){
           return (
-            <Tab key={`tabTitle-${index}`} label={item.title} {...a11yProps(index)} />
+            <Tab key={`tabTitle-${i}`} label={item.title} {...a11yProps(i)} />
           )
         })}
         </Tabs>
       </Box>
-      {props.data.items.map(function(item, index){
+      {props.data.items.map(function(item, i){
         return (
-          <TabPanel key={`tabContent-${index}`} value={value} index={index} align='left'>
+          <TabPanel key={`tabContent-${i}`} value={value} index={i} align='left'>
             {item.content}
           </TabPanel>
         )
