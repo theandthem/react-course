@@ -2,11 +2,34 @@ import React from "react";
 import style from './Header.module.css';
 import {Link} from "react-router-dom";
 import Button from '@mui/material/Button';
-import { useDispatch } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import { toggleSupportVisibility } from '../store/ExtrasSlice'
+import { changeLanguage } from "../store/LanguageSlice";
 
 export default function Header() {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
+  const activeLanguage = useSelector((state) => state.language.activeLanguage);
+  let langButton;
+
+  if (activeLanguage === 'de') {
+    langButton =
+      <Button
+        variant="contained"
+        disableElevation
+        onClick={() => dispatch(changeLanguage({langCode:'engb'}))}
+      >
+      English
+    </Button>;
+  } else {
+    langButton =
+      <Button
+          variant="contained"
+          disableElevation
+          onClick={() => dispatch(changeLanguage({langCode:'de'}))}
+        >
+        German
+      </Button>;
+  }
 
   return (
     <section className={style.header}>
@@ -23,6 +46,7 @@ export default function Header() {
       >
         Support
       </Button>
+      {langButton}
     </section>
   );
 }

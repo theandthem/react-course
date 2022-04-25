@@ -19,7 +19,7 @@ const topicData = [
         id: 'c1',
         type: 'text',
         data: {
-          content: 'Topic 2',
+          contentengb: 'Topic 2',
           textStyle: 'h4',
         },
       },
@@ -27,7 +27,7 @@ const topicData = [
         id: 'c2',
         type: 'text',
         data: {
-          content: 'This topic contains MUI components.',
+          contentengb: 'This topic contains MUI components.',
           textStyle: 'h4',
         },
       },

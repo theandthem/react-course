@@ -17,7 +17,8 @@ const topicData = [
         id: 'c1',
         type: 'text',
         data: {
-          content: 'Topic 1',
+          contentengb: 'Topic 1',
+          contentde: 'Thema 1 - GERMAN',
           textStyle: 'h4',
         },
       },
@@ -25,7 +26,8 @@ const topicData = [
         id: 'c1',
         type: 'text',
         data: {
-          content: 'Simple course built with both custom built and MUI components.',
+          contentengb: 'Simple course built with both custom built and MUI components.',
+          contentde: 'Einfacher Kurs, der sowohl mit benutzerdefinierten als auch mit MUI-Komponenten erstellt wurde.',
           textStyle: 'h4',
         },
       },
