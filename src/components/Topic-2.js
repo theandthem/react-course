@@ -20,6 +20,7 @@ const topicData = [
         type: 'text',
         data: {
           contentengb: 'Topic 2',
+          contentde: 'Thema 2 - GERMAN',
           textStyle: 'h4',
         },
       },
@@ -28,6 +29,7 @@ const topicData = [
         type: 'text',
         data: {
           contentengb: 'This topic contains MUI components.',
+          contentde: 'Bbenutzerdefinierten als auch mit MUI-Komponenten erstellt wurde.',
           textStyle: 'h4',
         },
       },
